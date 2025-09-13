@@ -14,11 +14,11 @@ RUN go mod download
 COPY . .
 
 # 6. Compilar binario
-RUN go build -o main .
+RUN go build -o compraVenta ./cmd/CompraVenta
 
 # 7. Imagen final para ejecutar
 FROM alpine:latest
 WORKDIR /app
-COPY --from=builder /app/main .
+COPY --from=builder /app/compraVenta .
 EXPOSE 8080
-CMD ["./main"]
+CMD ["./compraVenta"]
