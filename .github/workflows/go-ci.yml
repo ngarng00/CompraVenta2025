@@ -20,14 +20,15 @@ jobs:
 
    - name: Install dependencies
      run: go mod download
+     working-directory: backend/
 
    - name: Build
      run: go build -v ./...
-     working-directory: backend
+     working-directory: backend/
 
    - name: Test
      run: go test -v ./...
-     working-directory: backend
+     working-directory: backend/
 
    - name: Run golangci-lint
      uses: golangci/golangci-lint-action@v4
