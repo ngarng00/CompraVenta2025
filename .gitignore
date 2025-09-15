@@ -34,3 +34,4 @@ Thumbs.db                 # archivo de miniaturas de Windows
 # ========================
 *.env                     # variables de entorno locales (PORT, DB_URL, API keys, etc.)
 .dockerignore             # no hace falta subirlo, Render lo puede usar desde local
+frontend/node_modules/
