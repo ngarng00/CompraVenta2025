@@ -1,0 +1,36 @@
+# ========================
+# Node / React (frontend/)
+# ========================
+node_modules/             # dependencias de npm, nunca se suben (pesan mucho y se regeneran con npm install)
+build/                    # carpeta generada por `npm run build`, es artefacto de compilación
+dist/                     # algunas libs generan dist/ en vez de build/
+.cache/                   # cachés de herramientas como babel o eslint
+coverage/                 # resultados de tests (jest, etc.)
+*.log                     # logs (npm-debug.log, yarn-error.log, etc.)
+
+# ========================
+# Go (backend/)
+# ========================
+/backend/bin/             # binarios compilados, si los generas ahí
+/backend/main             # ejecutable principal compilado (go build -o main)
+*.exe                     # binarios en Windows
+*.out                     # binarios o resultados de test
+*.test                    # binarios temporales de test
+*.cover                   # archivos de cobertura
+vendor/                   # si usas go mod vendor (no se suele subir salvo casos especiales)
+
+# ========================
+# IDE / Editor
+# ========================
+.vscode/                  # configuración local de VSCode
+.idea/                    # configuración de JetBrains (GoLand, WebStorm…)
+*.swp                     # archivos swap de vim
+*.swo
+.DS_Store                 # archivo de macOS que no sirve en otros SO
+Thumbs.db                 # archivo de miniaturas de Windows
+
+# ========================
+# Docker
+# ========================
+*.env                     # variables de entorno locales (PORT, DB_URL, API keys, etc.)
+.dockerignore             # no hace falta subirlo, Render lo puede usar desde local
