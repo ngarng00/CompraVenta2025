@@ -11,8 +11,8 @@ coverage/                 # resultados de tests (jest, etc.)
 # ========================
 # Go (backend/)
 # ========================
-/backend/bin/             # binarios compilados, si los generas ahí
-/backend/main             # ejecutable principal compilado (go build -o main)
+backend/bin/             # binarios compilados, si los generas ahí
+backend/main             # ejecutable principal compilado (go build -o main)
 *.exe                     # binarios en Windows
 *.out                     # binarios o resultados de test
 *.test                    # binarios temporales de test
