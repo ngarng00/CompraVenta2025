@@ -28,7 +28,7 @@ vendor/                   # si usas go mod vendor (no se suele subir salvo casos
 *.swo
 .DS_Store                 # archivo de macOS que no sirve en otros SO
 Thumbs.db                 # archivo de miniaturas de Windows
-
+ 
 # ========================
 # Docker
 # ========================
