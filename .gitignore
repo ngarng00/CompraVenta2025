@@ -1,8 +1,8 @@
 # ========================
 # Node / React (frontend/)
 # ========================
-node_modules/             # dependencias de npm, nunca se suben (pesan mucho y se regeneran con npm install)
-build/                    # carpeta generada por `npm run build`, es artefacto de compilación
+frontend/node_modules/             # dependencias de npm, nunca se suben (pesan mucho y se regeneran con npm install)
+frontend/build/                    # carpeta generada por `npm run build`, es artefacto de compilación
 dist/                     # algunas libs generan dist/ en vez de build/
 .cache/                   # cachés de herramientas como babel o eslint
 coverage/                 # resultados de tests (jest, etc.)
