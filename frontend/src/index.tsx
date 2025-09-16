@@ -18,7 +18,7 @@ const tick = () => {
       <h1>Hola, mundo</h1>
       <h2> Its is {new Date().toLocaleTimeString()}</h2>
     </div>;
-  root2.render(element);
+  //root2.render(element);                           DESCOMENTAR SI LO QUIERO USAR
 }
 
 setInterval(tick, 1000);
