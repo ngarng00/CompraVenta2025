@@ -4,8 +4,9 @@ import './App.css';
 import { HolaMundo } from './componentes/HolaMundo';
 import { ComponenteFuncional } from './componentes/ComponenteFuncional';
 import { ComponenteClase } from './componentes/ComponenteClase';
-import { ComponenteClase2} from './componentes/ComponenteClase2';
+import { ComponenteClase2 } from './componentes/ComponenteClase2';
 import { ComponenteFuncional2 } from './componentes/ComponenteFuncional2';
+import { ComponenteHijo } from './componentes/ComponenteHijo';
 
 const name = 'Nicolas';
 const element = <h2>Hola, {name}</h2>;
@@ -23,7 +24,7 @@ const elementAHref = <a href="https://react.dev/"> Introducion Reactt </a>
 
 function App() {
   return (
-  
+
     /*<div className="App">
       <h1>Hola Mundo</h1>
       {name}
@@ -56,13 +57,28 @@ function App() {
         <>
           <ComponenteClase2 name ={"Diablito"}/>
         </>  
-      </div>*/
-    <>
+      </div>
+    
       <div className="ComponenteFuncional2">
         <>
           <ComponenteFuncional2 name ={"Ladroncito"}/>
         </>
-      </div>   
+      </div>*/
+    <>
+      <div className="ComponenteHijo">
+        <>
+          <ComponenteHijo
+            name={"Nicolas"}
+            apellido1={"Garnica"}
+            apellido2={"Galilea"}
+            edad={23}
+            clickReturnName={
+              (nameComplete) => {
+                console.log(nameComplete)
+              }
+            } />
+        </>
+      </div>
     </>
   );
 }
